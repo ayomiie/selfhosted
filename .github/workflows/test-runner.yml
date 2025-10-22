@@ -22,6 +22,6 @@ jobs:
 
       - name: Do a sample task
         run: |
-          echo "Thank you Infinion! Your self-hosted runner is LIVE 🔥"
+          echo "Thank you Infinion! My self-hosted runner is LIVE 🔥"
           hostname
           systeminfo | find "OS"
