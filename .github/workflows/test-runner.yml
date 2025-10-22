@@ -30,4 +30,4 @@ jobs:
         run: |
           Write-Host "Thank you Infinion! My self-hosted runner is LIVE 🔥"
           hostname
-          systeminfo | find "OS"
+          Get-CimInstance Win32_OperatingSystem | Select-Object Caption, Version
