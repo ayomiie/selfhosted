@@ -1,0 +1,27 @@
+name: Self-Hosted Runner Test
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  test-job:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Print environment info
+        run: |
+          echo "✅ Runner name: $RUNNER_NAME"
+          echo "🏷️ Labels: $RUNNER_LABELS"
+          echo "💻 OS: $RUNNER_OS"
+          echo "Working Directory: $RUNNER_WORKSPACE"
+
+      - name: Do a sample task
+        run: |
+          echo "Thank you Infinion! Your self-hosted runner is LIVE 🔥"
+          hostname
+          systeminfo | find "OS"
