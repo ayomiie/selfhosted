@@ -21,13 +21,13 @@ jobs:
 
       - name: Print environment info
         run: |
-          Write-Host "✅ Runner name: $env:RUNNER_NAME"
-          Write-Host "🏷️ Labels: $env:RUNNER_LABELS"
-          Write-Host "💻 OS: $env:RUNNER_OS"
+          Write-Host "Runner name: $env:RUNNER_NAME"
+          Write-Host "Labels: $env:RUNNER_LABELS"
+          Write-Host "OS: $env:RUNNER_OS"
           Write-Host "Working Directory: $env:RUNNER_WORKSPACE"
 
       - name: Do a sample task
         run: |
-          Write-Host "Thank you Infinion! My self-hosted runner is LIVE 🔥"
+          Write-Host "Thank you Infinion! My self-hosted runner is LIVE"
           hostname
           Get-CimInstance Win32_OperatingSystem | Select-Object Caption, Version
