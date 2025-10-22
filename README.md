@@ -10,8 +10,8 @@
 
 Challenges & How I Solved Them
 
-PowerShell blocked unsigned scripts which I Changed execution policy to **RemoteSigned** and used `ExecutionPolicy Bypass`. |
-| Workflow failed due to syntax errors | Fixed YAML indentation and removed invalid emoji characters I used earlier. |
+PowerShell blocked unsigned scripts which I Changed execution policy to **RemoteSigned** and used `ExecutionPolicy Bypass`. 
+| Workflow failed due to syntax errors | Fixed YAML indentation and removed invalid emoji characters I used earlier.
 | Runner didn’t start initially | Rechecked path, reconfigured token, and ran as admin to register correctly.
 
 
